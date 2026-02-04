@@ -1,6 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import type React from 'react';
-import Footer from '@/components/Footer/Footer';
+import Footer from '@/components/footer/Footer';
 
 type NavbarItemProps = {
 	active?: boolean;
@@ -14,16 +15,16 @@ function NavbarItem(props: NavbarItemProps) {
 		return (
 			<li className='relative cursor-pointer gap-1 bg-transparent px-3 py-2 font-medium text-sm text-teal-500 leading-6 focus-visible:ring focus-visible:ring-teal-400'>
 				<span className='absolute right-0 bottom-0 left-0 h-px bg-linear-to-r from-15% from-white via-50% via-teal-500 to-85% to-white'></span>
-				<a href={path}>{children}</a>
+				<Link href={path}>{children}</Link>
 			</li>
 		);
 	}
 
 	return (
 		<li className='cursor-pointer gap-1 rounded-md px-3 py-2 font-medium text-sm text-zinc-800 leading-6 focus-within:ring focus-within:ring-teal-400 hover:text-teal-500'>
-			<a href={path} className='outline-none'>
+			<Link href={path} className='outline-none'>
 				{children}
-			</a>
+			</Link>
 		</li>
 	);
 }
@@ -31,12 +32,12 @@ function NavbarItem(props: NavbarItemProps) {
 function Navbar() {
 	return (
 		<ul className='flex flex-row rounded-full border border-zinc-500/5 bg-white px-3 shadow-lg'>
-			<NavbarItem path='#'>Home</NavbarItem>
-			<NavbarItem path='#' active={true}>
+			<NavbarItem path='/'>Home</NavbarItem>
+			<NavbarItem path='/about'>
 				About
 			</NavbarItem>
-			<NavbarItem path='#'>Projects</NavbarItem>
-			<NavbarItem path='#'>Uses</NavbarItem>
+			<NavbarItem path='/projects'>Projects</NavbarItem>
+			<NavbarItem path='/uses'>Uses</NavbarItem>
 		</ul>
 	);
 }
@@ -50,9 +51,9 @@ export default function Home() {
 				<div className='size-5 bg-blue-500'></div>
 			</header>
 			<Footer links={[
-				{ title: 'About', url: '#' },
-				{ title: 'Projects', url: '#' },
-				{ title: 'Contact', url: '#' }
+				{ title: 'About', url: '/about' },
+				{ title: 'Projects', url: '/projects' },
+				{ title: 'Uses', url: '/uses' }
 			]} />
 		</main>
 	);
