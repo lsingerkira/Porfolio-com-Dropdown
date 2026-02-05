@@ -44,13 +44,15 @@ function Navbar() {
 
 export default function Home() {
 	return (
-		<main>
+		<main className='flex flex-col min-h-screen'>
 			<header className='flex h-18 items-center justify-between px-24 pt-6 pb-2'>
 				<div className='size-5 opacity-0'></div>
 				<Navbar />
 				<div className='size-5 bg-blue-500'></div>
 			</header>
+			<div className='flex-1'></div>
 			<Footer links={[
+				{ title: 'Home', url: '/' },
 				{ title: 'About', url: '/about' },
 				{ title: 'Projects', url: '/projects' },
 				{ title: 'Uses', url: '/uses' }
