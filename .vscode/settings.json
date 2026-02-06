@@ -27,6 +27,7 @@
 	"css.validate": true,
 	"css.lint.unknownAtRules": "ignore",
 	"files.eol": "\n",
+	"files.insertFinalNewline": true,
 	// Git decorations
 	"scm.defaultViewMode": "tree",
 	"git.decorations.enabled": true,
