@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import type React from 'react';
+import ThemeSwitcher from './components/themeSwitcher/themeSwitcher';
 
 type NavbarItemProps = {
 	active?: boolean;
@@ -46,7 +47,7 @@ export default function Home() {
 			<header className='flex h-18 items-center justify-between px-24 pt-6 pb-2'>
 				<div className='size-5 opacity-0'></div>
 				<Navbar />
-				<div className='size-5 bg-blue-500'></div>
+				<ThemeSwitcher />
 			</header>
 		</main>
 	);
