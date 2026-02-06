@@ -1,9 +1,9 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import type React from 'react';
 
-import ArticleCard from '@/components/footer/ArticleCard';
-import Footer from '@/components/footer/Footer';
+import ArticleCard from '@/components/Footer/ArticleCard';
+import Footer from '@/components/Footer/Footer';
+import SignupWidget from '@/components/SignUp/SignUp';
 
 import ThemeSwitcher from './components/themeSwitcher/themeSwitcher';
 
@@ -60,6 +60,12 @@ export default function Home() {
 					title='Lorem ipsum dolor sit amet'
 					description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue...'
 					url='/articles/sample-article'
+				/>
+			</div>
+			<div className='flex-1 px-24 py-12'>
+				<SignupWidget
+					title={'Stay up to date'}
+					content={'Get notified when I publish something new, and unsubscribe at any time.'}
 				/>
 			</div>
 			<div className='flex-1 px-24 py-12'>
