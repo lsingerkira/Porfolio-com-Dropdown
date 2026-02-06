@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type React from 'react';
 import Footer from '@/components/footer/Footer';
+import ArticleCard from '@/components/footer/ArticleCard';
 
 type NavbarItemProps = {
 	active?: boolean;
@@ -50,7 +51,30 @@ export default function Home() {
 				<Navbar />
 				<div className='size-5 bg-blue-500'></div>
 			</header>
-			<div className='flex-1'></div>
+			<div className='flex-1 px-24 py-12'>
+				<ArticleCard
+					date="2023-12-25"
+					title="Lorem ipsum dolor sit amet"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue..."
+					url="/articles/sample-article"
+				/>
+			</div>
+			<div className='flex-1 px-24 py-12'>
+				<ArticleCard
+					date="2024-06-01"
+					title="Lorem ipsum dolor sit amet"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue..."
+					url="/articles/sample-article"
+				/>
+			</div>
+			<div className='flex-1 px-24 py-12'>
+				<ArticleCard
+					date="2024-06-01"
+					title="Lorem ipsum dolor sit amet"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue..."
+					url="/articles/sample-article"
+				/>
+			</div>
 			<Footer links={[
 				{ title: 'Home', url: '/' },
 				{ title: 'About', url: '/about' },
