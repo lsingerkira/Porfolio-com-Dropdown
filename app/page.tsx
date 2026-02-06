@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import type React from 'react';
+
 import ThemeSwitcher from './components/themeSwitcher/themeSwitcher';
 
 type NavbarItemProps = {
@@ -20,7 +20,7 @@ function NavbarItem(props: NavbarItemProps) {
 	}
 
 	return (
-		<li className='cursor-pointer gap-1 rounded-md px-3 py-2 font-medium text-sm text-foreground leading-6 focus-within:ring focus-within:ring-teal-400 hover:text-teal-500'>
+		<li className='cursor-pointer gap-1 rounded-md px-3 py-2 font-medium text-foreground text-sm leading-6 focus-within:ring focus-within:ring-teal-400 hover:text-teal-500'>
 			<a href={path} className='outline-none'>
 				{children}
 			</a>
@@ -30,7 +30,7 @@ function NavbarItem(props: NavbarItemProps) {
 
 function Navbar() {
 	return (
-		<ul className='flex items-center gap-1 rounded-full px-3 py-1 bg-background/70 backdrop-blur-md border border-white/10 shadow-md shadow-black/30 text-foreground'>
+		<ul className='flex items-center gap-1 rounded-full border border-white/10 bg-background/70 px-3 py-1 text-foreground shadow-black/30 shadow-md backdrop-blur-md'>
 			<NavbarItem path='#'>Home</NavbarItem>
 			<NavbarItem path='#' active={true}>
 				About
