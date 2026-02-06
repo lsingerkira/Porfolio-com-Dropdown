@@ -1,3 +1,8 @@
+html,
+body {
+	height: 100%;
+}
+
 @import "tailwindcss";
 
 :root {
@@ -5,11 +10,19 @@
 	--foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #161313;
-		--foreground: #ededed;
-	}
+html.dark {
+	--background: #17171a;
+	--foreground: #ededed;
+}
+
+/* Apply theme variables to the whole page so toggling the .dark class updates background and text */
+body {
+	background-color: var(--background);
+	color: var(--foreground);
+	transition:
+		background-color 0.25s ease,
+		color 0.25s ease;
+	min-height: 100vh;
 }
 
 @theme inline {
