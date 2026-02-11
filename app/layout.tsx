@@ -5,6 +5,8 @@ import './globals.css';
 import Footer from '@/components/Footer/Footer';
 import { MENU_ITEMS } from '@/lib/types';
 
+import ThemeSwitcher from './components/themeSwitcher/themeSwitcher';
+
 const robotoSans = Roboto({
 	variable: '--font-roboto-sans',
 	subsets: ['latin'],
@@ -23,8 +25,22 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${robotoSans.variable} min-h-screen bg-background font-sans text-foreground antialiased`}>
-				{children}
-				<Footer links={MENU_ITEMS} />
+				<main className='flex min-h-screen flex-col'>
+					<header className='flex h-18 items-center justify-between px-24 pt-6 pb-2'>
+						<div className='size-5 opacity-0'></div>
+						<Navbar
+							links={[
+								{ title: 'Home', url: '/' },
+								{ title: 'About', url: '/about' },
+								{ title: 'Projects', url: '/projects' },
+								{ title: 'Uses', url: '/uses' },
+							]}
+						/>
+						<ThemeSwitcher />
+					</header>
+					<div>{children}</div>
+					<Footer links={MENU_ITEMS} />
+				</main>
 			</body>
 		</html>
 	);
