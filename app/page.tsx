@@ -1,9 +1,9 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import type React from 'react';
 
-import ArticleCard from '@/components/footer/ArticleCard';
-import Footer from '@/components/footer/Footer';
+import ArticleCard from '@/components/Footer/ArticleCard';
+import Footer from '@/components/Footer/Footer';
+import SignupWidget from '@/components/SignUp/SignUp';
 
 import ThemeSwitcher from './components/themeSwitcher/themeSwitcher';
 
@@ -36,10 +36,8 @@ function NavbarItem(props: NavbarItemProps) {
 function Navbar() {
 	return (
 		<ul className='flex items-center gap-1 rounded-full border border-white/10 bg-background/70 px-3 py-1 text-foreground shadow-black/30 shadow-md backdrop-blur-md'>
-			<NavbarItem path='#'>Home</NavbarItem>
-			<NavbarItem path='#' active={true}>
-				About
-			</NavbarItem>
+			<NavbarItem path='/'>Home</NavbarItem>
+			<NavbarItem path='/about'>About</NavbarItem>
 			<NavbarItem path='/projects'>Projects</NavbarItem>
 			<NavbarItem path='/uses'>Uses</NavbarItem>
 		</ul>
@@ -60,6 +58,12 @@ export default function Home() {
 					title='Lorem ipsum dolor sit amet'
 					description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue...'
 					url='/articles/sample-article'
+				/>
+			</div>
+			<div className='flex-1 px-24 py-12'>
+				<SignupWidget
+					title={'Stay up to date'}
+					content={'Get notified when I publish something new, and unsubscribe at any time.'}
 				/>
 			</div>
 			<div className='flex-1 px-24 py-12'>

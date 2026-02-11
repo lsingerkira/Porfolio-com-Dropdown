@@ -23,7 +23,6 @@ export default function ArticleCard({ date, title, description, url }: ArticleCa
 			<Link href={url} className='text-teal-500 hover:underline'>
 				Read articleclear
 			</Link>
-			O
 		</div>
 	);
 }
