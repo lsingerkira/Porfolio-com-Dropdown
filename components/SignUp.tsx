@@ -31,9 +31,9 @@ export function SignupWidget({ title, content, simulateNetworkRequestTime = 2000
 			data-testid={'signupWidget'}
 			onSubmit={handleSubmit}
 			autoComplete={'off'}
-			className='mx-auto max-w-md rounded-lg border border-zinc-200 bg-white p-6 shadow-sm'
+			className='mx-auto max-w-md rounded-lg border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-700/40 dark:bg-zinc-900'
 		>
-			<h2 data-testid={'signupWidgetTitle'} className='mb-2 font-semibold text-lg text-zinc-900'>
+			<h2 data-testid={'signupWidgetTitle'} className='mb-2 font-semibold text-lg'>
 				{title}
 			</h2>
 

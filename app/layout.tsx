@@ -24,8 +24,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${robotoSans.variable} bg-zinc-50 px-20 font-sans antialiased dark:bg-black`} suppressHydrationWarning>
-				<div className='flex min-h-screen flex-col bg-background'>
+			<body
+				className={`${robotoSans.variable} bg-zinc-50 px-4 font-sans antialiased lg:px-20 dark:bg-black`}
+				suppressHydrationWarning
+			>
+				<div className='mx-auto flex min-h-screen max-w-7xl flex-col bg-background'>
 					<header className='flex h-18 items-center justify-between px-24 pt-6 pb-2'>
 						<div className='size-5 opacity-0'></div>
 						<Navbar links={MENU_ITEMS} />
