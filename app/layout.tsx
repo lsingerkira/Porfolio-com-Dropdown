@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 
-import Footer from '@/components/Footer/Footer';
-import { MENU_ITEMS } from '@/lib/types';
-
-import ThemeSwitcher from './components/themeSwitcher/themeSwitcher';
+import { Footer } from '@/components/Footer';
+import { Navbar } from '@/components/Navbar';
+import { ThemeSwitcher } from '@/components/ThemeSwitcher';
+import { MENU_ITEMS } from '@/lib/constants';
 
 const robotoSans = Roboto({
 	variable: '--font-roboto-sans',
@@ -24,23 +24,16 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${robotoSans.variable} min-h-screen bg-background font-sans text-foreground antialiased`}>
-				<main className='flex min-h-screen flex-col'>
+			<body className={`${robotoSans.variable} bg-zinc-50 px-20 font-sans antialiased dark:bg-black`}>
+				<div className='flex min-h-screen flex-col bg-background'>
 					<header className='flex h-18 items-center justify-between px-24 pt-6 pb-2'>
 						<div className='size-5 opacity-0'></div>
-						<Navbar
-							links={[
-								{ title: 'Home', url: '/' },
-								{ title: 'About', url: '/about' },
-								{ title: 'Projects', url: '/projects' },
-								{ title: 'Uses', url: '/uses' },
-							]}
-						/>
+						<Navbar links={MENU_ITEMS} />
 						<ThemeSwitcher />
 					</header>
-					<div>{children}</div>
+					<main className='flex-1'>{children}</main>
 					<Footer links={MENU_ITEMS} />
-				</main>
+				</div>
 			</body>
 		</html>
 	);

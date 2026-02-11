@@ -1,6 +1,6 @@
 'use client';
 
-import React, { FormEvent, useState } from 'react';
+import { useState } from 'react';
 
 type SignupWidgetProps = {
 	title: string;
@@ -8,13 +8,13 @@ type SignupWidgetProps = {
 	simulateNetworkRequestTime?: number;
 };
 
-const SignupWidget = ({ title, content, simulateNetworkRequestTime = 2000 }: SignupWidgetProps) => {
+export function SignupWidget({ title, content, simulateNetworkRequestTime = 2000 }: SignupWidgetProps) {
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 	const [isSubscribed, setIsSubscribed] = useState(false);
 	const [busy, setBusy] = useState(false);
 
-	async function handleSubmit(e) {
+	async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		e.preventDefault();
 		try {
 			setBusy(true);
@@ -81,6 +81,4 @@ const SignupWidget = ({ title, content, simulateNetworkRequestTime = 2000 }: Sig
 			)}
 		</form>
 	);
-};
-
-export default SignupWidget;
+}

@@ -6,18 +6,17 @@ body {
 @import "tailwindcss";
 
 :root {
-	--background: #ffffff;
+	--background: white;
 	--foreground: #171717;
 }
 
 html.dark {
-	--background: #17171a;
+	--background: oklch(21% 0.006 285.885);
 	--foreground: #ededed;
 }
 
 /* Apply theme variables to the whole page so toggling the .dark class updates background and text */
 body {
-	background-color: var(--background);
 	color: var(--foreground);
 	transition:
 		background-color 0.25s ease,

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 
 type Theme = 'light' | 'dark';
 
-export default function ThemeSwitcher() {
+export function ThemeSwitcher() {
 	const [theme, setTheme] = useState<Theme>('light');
 	const btnRef = useRef<HTMLButtonElement | null>(null);
 

@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import React from 'react';
 
 interface ArticleCardProps {
 	date: string;
@@ -8,7 +7,7 @@ interface ArticleCardProps {
 	description: string;
 	url: string;
 }
-export default function ArticleCard({ date, title, description, url }: ArticleCardProps) {
+export function ArticleCard({ date, title, description, url }: ArticleCardProps) {
 	const formattedDate = new Date(date).toLocaleDateString('en-US', {
 		year: 'numeric',
 		month: 'long',
