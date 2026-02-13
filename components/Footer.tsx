@@ -12,19 +12,22 @@ export function Footer(props: FooterProps) {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className='flex items-center justify-between px-36 pt-10 pb-16'>
+		<footer className='flex flex-col items-center gap-3 border-zinc-200 border-t px-8 pt-10 pb-16 text-zinc-900 sm:flex-row sm:items-center sm:justify-between dark:border-zinc-800 dark:text-zinc-100'>
 			<nav className='flex gap-6'>
 				{links.map((link) => (
-					<Link key={link.path} href={link.path} className='text-base transition-colors hover:text-zinc-800'>
+					<Link
+						key={link.path}
+						href={link.path}
+						className='text-base transition-colors hover:text-zinc-800 dark:hover:text-zinc-200'
+					>
 						{link.title}
 					</Link>
 				))}
 			</nav>
-			<p className='text-sm text-zinc-400'>
+
+			<p className='text-center text-sm text-zinc-400'>
 				© {currentYear} {NAME}. All rights reserved.
 			</p>
 		</footer>
 	);
 }
-
-Footer.displayName = 'Footer';
