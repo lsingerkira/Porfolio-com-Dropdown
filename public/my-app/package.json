@@ -10,20 +10,17 @@
 		"format": "biome format --write"
 	},
 	"dependencies": {
-		"lucide-react": "^0.563.0",
-		"next": "^16.1.6",
-		"prop-types": "^15.8.1",
-		"react": "^19.2.3",
-		"react-dom": "^19.2.3"
+		"next": "16.1.6",
+		"react": "19.2.3",
+		"react-dom": "19.2.3"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.3.13",
+		"@biomejs/biome": "2.3.13",
 		"@tailwindcss/postcss": "^4",
 		"@types/node": "^20",
-		"@types/prop-types": "^15.7.15",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
-		"biome-tailwind-sorter": "^0.2.8",
+		"biome-tailwind-sorter": "0.2.8",
 		"tailwindcss": "^4",
 		"typescript": "^5"
 	}

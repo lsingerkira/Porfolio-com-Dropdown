@@ -1,5 +1,6 @@
 import { ArticleCard } from '@/components/ArticleCard';
 import { SignupWidget } from '@/components/SignUp';
+import { SkillsWidget } from '@/components/SkillsWidget';
 
 export default function Home() {
 	return (
@@ -30,6 +31,15 @@ export default function Home() {
 					<SignupWidget
 						title={'Stay up to date'}
 						content={'Get notified when I publish something new, and unsubscribe at any time.'}
+					/>
+					<SkillsWidget
+						title={'Skills'}
+						content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
+						skills={[
+							{ icon: '/icons/html.svg', name: 'HTML', proficiency: 25 },
+							{ icon: '/icons/css.svg', name: 'CSS', proficiency: 25 },
+							{ icon: '/icons/js.svg', name: 'JavaScript', proficiency: 25 },
+						]}
 					/>
 				</div>
 			</div>
