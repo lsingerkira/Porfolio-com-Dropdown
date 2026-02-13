@@ -1,4 +1,5 @@
 import { ArticleCard } from '@/components/ArticleCard';
+import { Intro } from '@/components/Intro';
 import { SignupWidget } from '@/components/SignUp';
 import { WorkWidget } from '@/components/Work';
 
@@ -33,10 +34,19 @@ const experiences = [
 	},
 ];
 
+const introProps = {
+	logo: '/Avatar.svg',
+	name: 'Software Engineer, father, and believer',
+	content:
+		'Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi.',
+};
+
 export default function Home() {
 	return (
 		<main className='mx-auto flex max-w-[1280px] flex-col gap-6 px-4 pt-6 pb-16 lg:px-[144px]'>
-			<div>Intro</div>
+			<div className='flex w-full max-w-[672px] flex-col gap-6'>
+				<Intro logo={introProps.logo} name={introProps.name} content={introProps.content} />
+			</div>
 			<div className='flex flex-col gap-6 lg:w-full lg:flex-row lg:items-start lg:justify-between'>
 				<div className='space-y-8 lg:flex-1'>
 					<ArticleCard
