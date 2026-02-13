@@ -6,7 +6,7 @@ import { SkillsWidget } from '@/components/SkillsWidget';
 export default function Home() {
 	return (
 		<div>
-			<Intro />
+			<div>Intro</div>
 			<div className='flex flex-col gap-8 lg:flex-row lg:justify-between'>
 				<div className='space-y-8 lg:flex-1'>
 					<ArticleCard
@@ -28,14 +28,14 @@ export default function Home() {
 						url='/articles/sample-article'
 					/>
 				</div>
-				<div className=''>
+				<div className='mx-auto flex w-fit flex-col gap-6'>
 					<SignupWidget
 						title={'Stay up to date'}
 						content={'Get notified when I publish something new, and unsubscribe at any time.'}
 					/>
 					<SkillsWidget
-						title={'Skills'}
-						content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
+						title={'My Skills'}
+						content={'lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
 						skills={[
 							{ icon: '/icons/html.svg', name: 'HTML', proficiency: 25 },
 							{ icon: '/icons/css.svg', name: 'CSS', proficiency: 25 },

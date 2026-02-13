@@ -31,9 +31,10 @@ export function SignupWidget({ title, content, simulateNetworkRequestTime = 2000
 			data-testid={'signupWidget'}
 			onSubmit={handleSubmit}
 			autoComplete={'off'}
-			className='mx-auto max-w-md rounded-lg border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-700/40 dark:bg-zinc-900'
+			className='w-full rounded-2xl border border-zinc-100 bg-white p-6 shadow-sm sm:w-[398px] dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100'
 		>
-			<h2 data-testid={'signupWidgetTitle'} className='mb-2 font-semibold text-lg'>
+			<h2 data-testid='signupWidgetTitle' className='mb-2 flex items-center gap-3 font-semibold text-lg'>
+				<img data-testid='signupWidgetTitleIcon' src='/Vectormail.svg' alt='Mail Icon' className='h-6 w-6 shrink-0' />
 				{title}
 			</h2>
 
@@ -64,7 +65,7 @@ export function SignupWidget({ title, content, simulateNetworkRequestTime = 2000
 							value={email}
 							disabled={busy}
 							onChange={(e) => setEmail(e.target.value)}
-							className='flex-1 rounded-md border border-zinc-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500'
+							className='flex-1 rounded-md border border-zinc-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:border-zinc-700'
 							placeholder='Email address'
 						/>
 
