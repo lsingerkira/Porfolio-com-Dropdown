@@ -1,10 +1,11 @@
 import { ArticleCard } from '@/components/ArticleCard';
+import { Intro } from '@/components/Intro';
 import { SignupWidget } from '@/components/SignUp';
 
 export default function Home() {
 	return (
 		<div>
-			<div>Intro</div>
+			<Intro />
 			<div className='flex flex-col gap-8 lg:flex-row lg:justify-between'>
 				<div className='space-y-8 lg:flex-1'>
 					<ArticleCard
