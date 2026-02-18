@@ -34,12 +34,27 @@ const experiences = [
 	},
 ];
 
+<<<<<<< HEAD
+const introProps = {
+	logo: '/Avatar.svg',
+	name: 'Software Engineer, father, and believer',
+	content:
+		'Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ut et massa mi.',
+};
+=======
 import { SkillsWidget } from '@/components/SkillsWidget';
+>>>>>>> 0f7c32f50c45f1446534670599882caa71b3f66e
 
 export default function Home() {
 	return (
 		<main className='mx-auto flex max-w-[1280px] flex-col gap-6 px-4 pt-6 pb-16 lg:px-[144px]'>
+<<<<<<< HEAD
+			<div className='flex w-full max-w-[672px] flex-col gap-6'>
+				<Intro logo={introProps.logo} name={introProps.name} content={introProps.content} />
+			</div>
+=======
 			<Intro />
+>>>>>>> 0f7c32f50c45f1446534670599882caa71b3f66e
 			<div className='flex flex-col gap-6 lg:w-full lg:flex-row lg:items-start lg:justify-between'>
 				<div className='space-y-8 lg:flex-1'>
 					<ArticleCard
