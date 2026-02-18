@@ -33,6 +33,7 @@ const experiences = [
 		endYear: 2011,
 	},
 ];
+
 import { SkillsWidget } from '@/components/SkillsWidget';
 
 export default function Home() {
@@ -70,6 +71,7 @@ export default function Home() {
 						title={'Work'}
 						content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Utet massa mi.'}
 						experiences={experiences}
+					/>
 					<SkillsWidget
 						title={'My Skills'}
 						content={'lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.'}
