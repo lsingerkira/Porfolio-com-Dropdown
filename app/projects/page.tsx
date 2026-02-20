@@ -54,7 +54,7 @@ export default function Projects(): JSX.Element {
 	];
 
 	return (
-		<main className='min-h-screen bg-zinc-50 px-6 py-12 transition-colors duration-300 md:px-24 dark:bg-zinc-900'>
+		<main className='min-h-screen px-6 py-12 transition-colors duration-300 md:px-24 dark:bg-zinc-900'>
 			{/* ---------------------- */}
 			{/*        HERO SECTION     */}
 			{/* ---------------------- */}
