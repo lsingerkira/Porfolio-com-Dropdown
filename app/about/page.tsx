@@ -78,12 +78,12 @@ export default function AboutPage() {
 						</Link>
 						<div className='w-fit'>
 							{/* Divider */}
-							<div className='dark: my-2 border-zinc-100 border-zinc-300 border-t' />
+							<div className='my-2 mt-8 border-zinc-100 border-t dark:border-zinc-300' />
 
 							{/* Email */}
 							<Link
 								href='mailto:bob@email.com'
-								className='flex items-center gap-3 text-sm text-zinc-800 transition-colors hover:text-foreground dark:text-zinc-300'
+								className='mt-8 flex items-center gap-3 text-sm text-zinc-800 transition-colors hover:text-foreground dark:text-zinc-300'
 							>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
