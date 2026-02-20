@@ -5,6 +5,12 @@ import { useEffect, useState } from 'react';
 export default function Projects(): JSX.Element {
 	const [darkMode, setDarkMode] = useState(false);
 
+	// Load saved theme preference
+	useEffect(() => {
+		const saved = localStorage.getItem('theme');
+		if (saved === 'dark') setDarkMode(true);
+	}, []);
+
 	// Apply dark mode to the <html> element
 	useEffect(() => {
 		if (darkMode) {
