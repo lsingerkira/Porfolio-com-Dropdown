@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
 type Theme = 'light' | 'dark';
@@ -44,7 +45,11 @@ export function ThemeSwitcher() {
 			aria-label='Toggle theme'
 			className={`flex size-9 items-center justify-center rounded-full border shadow transition hover:scale-105 ${theme === 'light' ? 'border-zinc-200 bg-white' : 'border-zinc-700 bg-zinc-900'}`}
 		>
-			{theme === 'light' ? '☀️' : '🌙'}
+			{theme === 'light' ? (
+				<Image src='/sun.svg' alt='Light mode' width={18} height={18} />
+			) : (
+				<Image src='/moon.svg' alt='Dark mode' width={18} height={18} />
+			)}
 		</button>
 	);
 }
