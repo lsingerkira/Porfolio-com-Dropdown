@@ -19,7 +19,7 @@ export default function AboutPage() {
 						I&apos;m Bob. I live in New York City, where I develop the future.
 					</h1>
 
-					<div className='space-y-6 text-base text-muted-foreground leading-7 dark:text-zinc-400'>
+					<div className='space-y-6 text-base text-zinc-600 leading-7 dark:text-zinc-400'>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur
 							adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum
@@ -52,7 +52,7 @@ export default function AboutPage() {
 					</div>
 
 					{/* Social Links */}
-					<div className='space-y-4 dark:text-zinc-400'>
+					<div className='space-y-4 text-zinc-800 dark:text-zinc-300'>
 						<Link
 							href='#'
 							className='flex items-center gap-3 text-muted-foreground text-sm transition-colors hover:text-foreground'
@@ -76,30 +76,31 @@ export default function AboutPage() {
 							<Image src='/LinkedIn.svg' alt='LinkedIn' width={20} height={20} className='dark:invert' />
 							<span>Follow me on LinkedIn</span>
 						</Link>
+						<div className='w-fit'>
+							{/* Divider */}
+							<div className='dark: my-2 border-zinc-100 border-zinc-300 border-t' />
 
-						{/* Divider */}
-						<div className='my-2 border-border border-t' />
-
-						{/* Email */}
-						<Link
-							href='mailto:bob@email.com'
-							className='flex items-center gap-3 text-muted-foreground text-sm transition-colors hover:text-foreground'
-						>
-							<svg
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 24 24'
-								fill='none'
-								stroke='currentColor'
-								strokeWidth='1.5'
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								className='h-5 w-5'
+							{/* Email */}
+							<Link
+								href='mailto:bob@email.com'
+								className='flex items-center gap-3 text-sm text-zinc-800 transition-colors hover:text-foreground dark:text-zinc-300'
 							>
-								<rect width='20' height='16' x='2' y='4' rx='2' />
-								<path d='m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7' />
-							</svg>
-							<span>bob@email.com</span>
-						</Link>
+								<svg
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 24 24'
+									fill='none'
+									stroke='currentColor'
+									strokeWidth='1.5'
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									className='h-5 w-5'
+								>
+									<rect width='20' height='16' x='2' y='4' rx='2' />
+									<path d='m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7' />
+								</svg>
+								<span>bob@email.com</span>
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>
