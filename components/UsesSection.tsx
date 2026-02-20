@@ -13,7 +13,7 @@ export default function UsesSection({ title, children }: UsesSectionProps) {
 				<h2 className='font-bold text-foreground text-sm'>{title}</h2>
 
 				{/* Section Content */}
-				<div className='space-y-12 md:col-span-3'>{children}</div>
+				<div className='space-y-12 text-sm md:col-span-3'>{children}</div>
 			</div>
 		</div>
 	);

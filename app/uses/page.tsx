@@ -11,7 +11,7 @@ export default function Uses() {
 						Software I use, gadgets I love, and other things I recommend.
 					</h1>
 
-					<p className='text-lg text-zinc-600 leading-relaxed dark:text-zinc-400'>
+					<p className='text-base text-zinc-600 leading-relaxed dark:text-zinc-400'>
 						Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur
 						adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum
 						dolor sit amet consectetur adipiscing elit Ut et massa mi..

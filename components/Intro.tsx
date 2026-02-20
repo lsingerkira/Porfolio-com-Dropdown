@@ -18,7 +18,7 @@ export function Intro() {
 			</div>
 
 			{/* Heading */}
-			<h1 className='font-bold text-4xl leading-tight'>Software engineer, father, and believer</h1>
+			<h1 className='font-bold text-5xl leading-tight'>Software engineer, father, and believer</h1>
 
 			{/* Description */}
 			<p className='text-base text-gray-600 leading-relaxed dark:text-zinc-400'>

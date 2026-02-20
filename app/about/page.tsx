@@ -15,7 +15,7 @@ export default function AboutPage() {
 			<div className='flex flex-col gap-10 md:flex-row md:gap-16'>
 				{/* Left Column - Heading + Text */}
 				<div className='flex-1'>
-					<h1 className='mb-8 font-bold text-[2.5rem] text-foreground leading-[1.15] tracking-tight md:text-[2.75rem]'>
+					<h1 className='mb-8 font-bold text-[32px] text-foreground leading-[1.15] tracking-tight md:text-5xl'>
 						I&apos;m Bob. I live in New York City, where I develop the future.
 					</h1>
 
