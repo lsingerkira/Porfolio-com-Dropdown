@@ -20,7 +20,7 @@ export function ArticleCard({ date, title, description, url }: ArticleCardProps)
 			<h3 className='mb-2 font-semibold text-xl text-zinc-900 dark:text-zinc-100'>{title}</h3>
 			<p className='mb-4 text-zinc-600 dark:text-zinc-400'>{description}</p>
 			<Link href={url} className='text-teal-500 hover:underline'>
-				Read articleclear
+				Read article
 			</Link>
 		</div>
 	);
