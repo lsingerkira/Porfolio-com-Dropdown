@@ -29,7 +29,7 @@ export default function RootLayout({
 				suppressHydrationWarning
 			>
 				<div className='mx-auto flex min-h-screen max-w-7xl flex-col bg-background'>
-					<header className='flex h-18 items-center justify-between px-24 pt-6 pb-2'>
+					<header className='z-50 flex h-18 items-center justify-between px-24 pt-6 pb-2'>
 						<div className='size-5 opacity-0'></div>
 						<Navbar links={MENU_ITEMS} />
 						<ThemeSwitcher />
