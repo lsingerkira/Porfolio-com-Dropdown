@@ -15,7 +15,7 @@
 * Routes and layout: `app/layout.tsx` and `app/(home)/page.tsx` (home page uses `Intro`, `ArticleCard`, `SignupWidget`, `WorkWidget`).
 * Shared components: `components/Intro.tsx`, `components/ArticleCard.tsx`, `components/SignUp.tsx`, `components/Work.tsx`, `components/Footer.tsx`.
 * TypeScript / path config: `tsconfig.json` (note `paths` mapping `@/*` → `./*`).
-* Next config: `next.config.ts` for framework-level settings.
+* Next config: `next.config.mjs` for framework-level settings.
 
 # Build / dev / debug
 * Start dev server: `npm run dev` (standard Next dev server). If you see import/export mismatch errors, check named vs default exports in the referenced component.
